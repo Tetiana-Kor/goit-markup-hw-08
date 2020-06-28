@@ -6,21 +6,23 @@
   @extend %list;
   display: flex;
 
+  @media screen and (min-width: 1200px) {
+    margin-left: 80px;
+  }
+
   .item {
     position: relative;
     transition: color 5000ms, $cubic;
   }
 
-  // margin-left: 80px;
-
-  // .item:not(:last-child) {
-  //   margin-right: 50px;
-  // }
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
 
   .link {
     display: block;
-    // padding-top: 32px;
-    // padding-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
     color: $primary-text-color;
     font-weight: 500;
@@ -55,14 +57,18 @@
 
 .contact-nav {
   @extend %list;
-  display: flex;
-  margin-left: auto;
-  // padding-top: 32px;
-  // padding-bottom: 32px;
 
-  // .item + .item {
-  //   // margin-left: 30px;
-  // }
+  margin-left: auto;
+
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    .item + .item {
+      margin-left: 30px;
+    }
+  }
 
   .link {
     display: flex;
@@ -75,6 +81,12 @@
     letter-spacing: 0.02em;
     text-decoration: none;
     transition: color 250ms $cubic;
+  }
+
+  .item:not(:last-child) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: 10px;
+    }
   }
 
   .item:hover a,

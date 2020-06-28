@@ -52,6 +52,24 @@ img {
   }
 }
 
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .logo {
   display: block;
   color: #212121;
@@ -65,6 +83,14 @@ img {
   .logo {
     padding-top: 16px;
     padding-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    margin-right: 81px;
   }
 }
 
@@ -94,9 +120,10 @@ img {
   padding-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .logo-footer {
     text-align: center;
+    margin-right: 0;
   }
 }
 
@@ -110,14 +137,26 @@ img {
   display: flex;
 }
 
+@media screen and (min-width: 1200px) {
+  .site-nav {
+    margin-left: 80px;
+  }
+}
+
 .site-nav .item {
   position: relative;
   -webkit-transition: color 5000ms, cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 5000ms, cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .site-nav .link {
   display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -150,10 +189,20 @@ img {
 }
 
 .contact-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1199px) {
+  .contact-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contact-nav .item + .item {
+    margin-left: 30px;
+  }
 }
 
 .contact-nav .link {
@@ -172,6 +221,12 @@ img {
   text-decoration: none;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contact-nav .item:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .contact-nav .item:hover a,
@@ -1055,6 +1110,7 @@ img {
 
 .contact {
   margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .address .link {
