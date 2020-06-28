@@ -13,11 +13,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header class="header-page">
       <div class="container main-nav">
         <nav class="nav">
           <a href="./index.html" class="logo"
@@ -34,7 +33,6 @@
             <li class="item"><a href="" class="link">Контакты</a></li>
           </ul>
         </nav>
-
         <ul class="contact-nav list">
           <li class="item">
             <a href="mailto:info@devstudio.com" class="link">
@@ -53,6 +51,54 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-button" data-menu-button>
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель меню"
+            aria-expanded="false"
+            aria-controls="menu"
+          >
+            <use
+              class="icon-closed"
+              href="./image/sprite1.svg#icon-close"
+            ></use>
+            <use
+              class="icon-menu"
+              href="./image/sprite1.svg#icon-menu_40px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu" data-menu>
+          <ul class="site-nav-menu list">
+            <li class="item">
+              <a href="./index.html" class="link current">Студия</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link">Портфолио</a>
+            </li>
+            <li class="item"><a href="" class="link">Контакты</a></li>
+          </ul>
+          <ul class="contact-nav-menu list">
+            <li class="item">
+              <a href="mailto:info@devstudio.com" class="link">
+                <svg class="contact-icon">
+                  <use href="./image/sprite1.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="tel:+380961111111" class="link">
+                <svg class="contact-icon">
+                  <use href="./image/sprite1.svg#icon-tel"></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -265,7 +311,7 @@
                 height="260"
                 alt="John Smith"
               />
-              <h3 class="team-subtitle">John Smith</h3>
+              <h3 class="team-subtitle">Николай Кучеренко</h3>
               <p class="text">Product Designer</p>
               <ul class="team-item list">
                 <li class="lines">
@@ -307,7 +353,7 @@
                 height="260"
                 alt="Marta Stewart"
               />
-              <h3 class="team-subtitle">Marta Stewart</h3>
+              <h3 class="team-subtitle">Ольга Иванова</h3>
               <p class="text">Frontend Developer</p>
               <ul class="team-item list">
                 <li class="lines">
@@ -349,7 +395,7 @@
                 height="260"
                 alt="Robert Jakis"
               />
-              <h3 class="team-subtitle">Robert Jakis</h3>
+              <h3 class="team-subtitle">Андрей Шевченко</h3>
               <p class="text">Marketing</p>
               <ul class="team-item list">
                 <li class="lines">
@@ -391,7 +437,7 @@
                 height="260"
                 alt="Martin Doe"
               />
-              <h3 class="team-subtitle">Martin Doe</h3>
+              <h3 class="team-subtitle">Иван Николаев</h3>
               <p class="text">UI Designer</p>
               <ul class="team-item list">
                 <li class="lines">
@@ -485,7 +531,7 @@
       <div class="container flex-footer">
         <!-- Address -->
         <div class="footer-list">
-          <a class="logo-footer" href="./index.html"
+          <a class="logo logo-footer" href="./index.html"
             ><span class="logo-web">Web </span>Studio</a
           >
           <address class="address">
@@ -532,18 +578,20 @@
 
         <div class="signup">
           <b class="invitation">Подпишитесь на рассылку</b>
-          <input
-            class="signup-input"
-            type="text"
-            name="email"
-            placeholder="E-mail"
-          />
-          <button class="button signup-button">
-            Подписаться
-            <svg class="signup-icon" width="24" height="24">
-              <use href="./image/sprite1.svg#icon-icon-send"></use>
-            </svg>
-          </button>
+          <div class="signup-content">
+            <input
+              class="signup-input"
+              type="text"
+              name="email"
+              placeholder="E-mail"
+            />
+            <button class="button signup-button">
+              Подписаться
+              <svg class="signup-icon" width="24" height="24">
+                <use href="./image/sprite1.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
