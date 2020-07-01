@@ -58,7 +58,6 @@ img {
 
 .header-page {
   position: relative;
-  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -328,6 +327,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,6 +355,7 @@ img {
 
 .menu-container {
   background-color: #ffffff;
+  z-index: 5;
 }
 
 @media screen and (max-width: 767px) {
@@ -484,6 +485,10 @@ p {
   margin-bottom: 0;
 }
 
+.portfolio {
+  border-top: 1px solid #ececec;
+}
+
 .portfolio-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -514,6 +519,7 @@ p {
 
 .port-subtitle .picture {
   display: block;
+  width: 100%;
 }
 
 .port-text {

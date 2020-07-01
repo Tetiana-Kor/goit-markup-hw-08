@@ -58,7 +58,6 @@ img {
 
 .header-page {
   position: relative;
-  border-bottom: 1px solid #ececec;
 }
 
 .main-nav {
@@ -328,6 +327,7 @@ img {
   padding: 0;
   border: none;
   background-color: transparent;
+  outline: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,6 +355,7 @@ img {
 
 .menu-container {
   background-color: #ffffff;
+  z-index: 5;
 }
 
 @media screen and (max-width: 767px) {
@@ -965,6 +966,7 @@ img {
   border-radius: 4px;
   margin-top: 30px;
   padding-bottom: 24px;
+  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
@@ -979,6 +981,10 @@ img {
     margin: 15px;
     width: calc((100% - 4 * 30px) / 4);
   }
+}
+
+.team-list .picture {
+  width: 100%;
 }
 
 .team-subtitle {

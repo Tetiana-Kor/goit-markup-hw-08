@@ -4,6 +4,10 @@ p {
   margin-bottom: 0;
 }
 
+.portfolio {
+  border-top: 1px solid #ececec;
+}
+
 .portfolio-title {
   margin-top: 0;
   margin-bottom: 0;
@@ -30,6 +34,7 @@ p {
 
 .port-subtitle .picture {
   display: block;
+  width: 100%;
 }
 
 .port-text {

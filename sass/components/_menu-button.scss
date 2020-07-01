@@ -8,6 +8,7 @@
   border: none;
   // outline: 0;
   background-color: transparent;
+  outline: none;
 
   @media screen and (min-width: 768px) {
     display: none;
@@ -33,6 +34,7 @@
 
 .menu-container {
   background-color: $primary-white-color;
+  z-index: 5;
 
   @media screen and (max-width: 767px) {
     display: none;
